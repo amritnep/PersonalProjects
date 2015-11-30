@@ -9,8 +9,10 @@ namespace LoanManagementSystem.ViewModel
     public class CustomerViewModel
     {
         public int ID { get; set; }
-        public string Name { get; set; }
+
         [Required]
+        public string Name { get; set; }
+        [Required]        
         public string Address { get; set; }
         [Editable(false)]
         public double Balance { get; set; }
